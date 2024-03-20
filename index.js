@@ -61,8 +61,6 @@ client.on('ready', () => {
   });
 
 
-  const { QuickDB } = require("quick.db");
-  const db = new QuickDB();
 
   
 client.on("ready", () => {
