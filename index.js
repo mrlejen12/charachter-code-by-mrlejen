@@ -67,16 +67,13 @@ client.on("ready", () => {
     const cmdsg = [];
 
 
-    let slh = new SlashCommandBuilder()
-    .setName("ping")
-    .setDescription("ping command")
+
     let btn = new SlashCommandBuilder()
     .setName("button_send")
     .setDescription("send charscter button")
     .addChannelOption(p =>
       p.setName("select_channel")
       .setDescription("select channel"))
-    cmdsg.push(slh);
     cmdsg.push(btn);
     const rest = new REST({version: 9}).setToken(info.token);
 
@@ -100,13 +97,6 @@ client.on("ready", () => {
         if (!message.isCommand()) return;
 
   const { commandName } = message;
-  if(commandName === 'ping'){
-    const embed = new EmbedBuilder()
-    .setDescription(`**
-    my ping : \`${client.ws.ping}\`
-  **`)       
- message.reply({embeds : [embed]})
-                            }
   if(commandName === 'button_send'){
     let mm = message.options.getChannel("select_channel");
     if(message.user.id !== owner){
