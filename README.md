@@ -1,4 +1,4 @@
-**welocme to `credit_bot_by_mrlejen`**
+**welocme to `charachter-code-by-mrlejen`**
 
 **go to `config.js` and type BOT `TOKEN` and BOT `name` and BOT `state` if you you want make bot private edit `private` to `true` if you dont edit `private` `false` , if `private` `true` add id your server in `servers` and type in `owner` your id**
 
